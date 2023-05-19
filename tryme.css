@@ -1,0 +1,51 @@
+*{
+    margin: 0;
+    padding: 0;
+    position: relative;
+}
+
+.maindiv{
+    display: flex;
+    
+}
+
+.imagekidiv{
+    width: 900px;
+    height: 300px;
+    margin: 20px;
+    overflow: hidden;
+}
+
+.imagekidiv img{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: -1;
+}
+
+
+.imagekidiv:hover img{
+    transform: scale(1.2);
+}
+
+
+.imagekidiv h5{
+    text-align: center;
+    font-size: 24px;
+    padding-top: 20px;
+}
+
+.imagekidiv:before {
+    content: "";
+    position: absolute;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    bottom: -100%;
+    transition: all 1s ease;
+  }
+
+  .imagekidiv:hover:before {
+    bottom: 0;
+  }

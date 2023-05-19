@@ -1,0 +1,24 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.gallery {
+    display: flex;
+    margin: 2rem auto;
+    width: 80%;
+}
+.imgsaw {
+    width: 300px;
+    margin: 20px;
+    overflow: hidden;
+}
+.imgsaw img {
+    height: 100%;
+    width: 100%;
+    transition: all 0.5s;
+}
+
+.imgsaw:hover img{
+    transform: scale(1.2);
+}
